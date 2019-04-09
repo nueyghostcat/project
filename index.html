@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>fullPage.js — Basic Demo</title>
+<link rel="stylesheet" href="css/jquery.fullPage.css">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<style>
+#menu { margin: 0; padding: 0; position: fixed; left: 10px; top: 10px; list-style-type: none; z-index: 70;}
+#menu li { float: left; margin:  0 10px 0 0; font-size: 14px;}
+#menu a { float: left; padding: 10px 20px; background-color: #fff; color: #333; text-decoration: none;}
+#menu .active a 
+.section { text-align: center; font: 50px "Microsoft Yahei"; color: #fff;}
+</style>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/jquery.fullPage.min.js"></script>
+<script>
+$(function(){
+	$('#dowebok').fullpage({
+		sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', '#f90'],
+		anchors: ['page1', 'page2', 'page3', 'page4','page5'],
+		menu: '#menu'
+	});
+});
+</script>
+</head>
+
+<body>
+
+
+<ul id="menu">
+	<button type="button" class="btn btn-outline-warning"><li data-menuanchor="page1" class="active"><a href="#page1">Population</a></li></button>
+	<button type="button" class="btn btn-outline-warning"><li data-menuanchor="page2"><a href="#page2">Social usage rate</a></li></button>
+	<button type="button" class="btn btn-outline-warning"><li data-menuanchor="page3"><a href="#page3">Example of used socail app in Thailand</a></li></button>
+	<button type="button" class="btn btn-outline-warning"><li data-menuanchor="page4"><a href="#page4">4</a></li></button>
+	<button type="button" class="btn btn-outline-warning"><li data-menuanchor="page5"><a href="#page5">Infographics</a></li></button>
+</ul>
+
+<div id="dowebok">
+	<div class="section" align="center">
+		<div align="center" class="slide">
+		<iframe src="https://my.visme.co/projects/ep8jx89v-untitled-project" width="1400px" height="700px" frameborder="0"></iframe>
+		</div>
+		<div align="center" class="slide">
+		<h5>Population in Thailand</h5>
+		<iframe src="https://plotdb.io/v/chart/20967" width="1000px" height="500px" frameborder="0"></iframe>
+		</div>
+	</div>
+	
+	
+	
+	
+	<div class="section">
+		<div class="slide">
+			<h3>Social usage rate</h3>
+			<iframe src="https://plotdb.com/dataset/16705" width="100%" height="500px" allowfullscreen="true" frameborder="0"></iframe>		
+		</div>
+		<div class="slide">
+			<iframe src="https://plotdb.io/v/chart/15006" width="100%" height="550px" allowfullscreen="true" frameborder="0"></iframe>	
+		</div>
+	</div>
+	
+	<div class="section">
+		<div class="slide">
+			<iframe src="sectoremployment.html" width="90%" height="550px" allowfullscreen="true" frameborder="0"></iframe>
+		</div>
+		<div class="slide">
+			<iframe src="https://plotdb.io/v/chart/20966" width="90%" height="550px" allowfullscreen="true" frameborder="0"></iframe>
+		</div>
+	</div>
+	
+	
+	<div class="section">
+		<div class="slide">
+		<h4>Example of used socail app in Thailand</h4>
+			<iframe src="https://github.com/nueyghostcat/1/.git" width="100%" height="700px" align="center" allowfullscreen="true" frameborder="0"></iframe>
+		</div>
+		<div class="slide" align="center">
+			<iframe src="https://nueyghostcat.github.io/-/Unemployment.jpg" width="830px" height="550px" frameborder="0"></iframe>
+		</div>
+		<div class="slide" align="center">
+			<iframe src="https://nueyghostcat.github.io/-/piktochart.png" width = "830px" height="550px" frameborder="0"></iframe>
+		</div>		
+		<div class="slide" align="center">
+			<iframe src="https://nueyghostcat.github.io/-/Unemployment550.jpg" width="220px" height="550px" frameborder="0"></iframe>
+			<iframe src="https://nueyghostcat.github.io/-/piktochart550.jpg" width = "206px" height="550px" frameborder="0"></iframe>
+		</div>
+		<div class="slide" align="center">
+			<iframe src="https://nueyghostcat.github.io/-/Unemployment1000.jpg" width="420px" height="550px" frameborder="0"></iframe>
+		</div>
+		<div class="slide" align="center">
+			<iframe src="https://nueyghostcat.github.io/-/piktochart1000.jpg" width = "395px" height="550px" frameborder="0"></iframe>
+		</div>
+		
+		<div class="slide" align="center">
+			<a href="https://create.piktochart.com/output/25371502-mongolia">Click here to go to Piktochart</a>
+		</div>
+	</div>
+	
+	<div class="section">
+		<div class="slide">
+			<iframe src="sectoremployment.html" width="90%" height="550px" allowfullscreen="true" frameborder="0"></iframe>
+		</div>
+		<div class="slide">
+			<iframe src="https://plot.ly/~Chaminchuluun/3.embed" width="90%" height="550px" allowfullscreen="true" frameborder="0"></iframe>
+		</div>
+	</div>
+</div>
+
+
+
+</body>
+</html>
